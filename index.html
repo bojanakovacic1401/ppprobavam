@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakazivanje termina</title>
+</head>
+<body>
+    <h2>Zakazivanje termina</h2>
+    <form action="index.php" method="POST">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required><br><br>
+        
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required><br><br>
+        
+        <label for="telefon">Broj telefona:</label>
+        <input type="text" id="telefon" name="telefon" required><br><br>
+        
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="datum" required><br><br>
+        
+        <label for="vreme">Vreme (od 15:00 do 21:00):</label>
+        <input type="time" id="vreme" name="vreme" min="15:00" max="21:00" required><br><br>
+        
+        <input type="submit" value="Zakaži termin">
+    </form>
+</body>
+</html>
